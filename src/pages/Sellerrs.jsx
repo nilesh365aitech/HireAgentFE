@@ -25,12 +25,12 @@ const Seller = () => {
   const navigate = useNavigate();
 
   // Check for token in localStorage
-  useEffect(() => {
-    const token = localStorage.getItem("authToken");
-    if (!token) {
-      navigate("/login"); // Redirect to the login page if no token is present
-    }
-  }, [navigate]);
+  // useEffect(() => {
+  //   const token = localStorage.getItem("authToken");
+  //   if (!token) {
+  //     navigate("/login"); // Redirect to the login page if no token is present
+  //   }
+  // }, [navigate]);
 
   // Handle form input changes
   const handleInputChange = (e) => {
@@ -81,7 +81,7 @@ const Seller = () => {
 
     try {
       const response = await fetch(
-        "https://gc0bj9bk-7009.inc1.devtunnels.ms/api/lead/create-lead",
+        "https://configstaging.trainright.fit/api/lead/create-lead",
         {
           method: "POST",
           headers: {

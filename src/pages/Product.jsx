@@ -56,7 +56,7 @@ const Product = () => {
       }
 
       const response = await fetch(
-        `https://gc0bj9bk-7009.inc1.devtunnels.ms/api/configs/filterAssistants`,
+        `https://configstaging.trainright.fit/api/configs/filterAssistants`,
         {
           method: 'GET',
           headers: {

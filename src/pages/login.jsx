@@ -17,7 +17,7 @@ export default function login() {
   
     try {
       const response = await fetch(
-        "https://gc0bj9bk-7009.inc1.devtunnels.ms/api/users/login",
+        "https://configstaging.trainright.fit/api/users/login",
         {
           method: "POST",
           headers: {
@@ -33,12 +33,13 @@ export default function login() {
       }
   
       const data = await response.json();
-      const { authToken } = data; // Updated to use `authToken`
+      const { authToken, profile } = data; // Updated to use `authToken`
+      
   
       if (authToken) {
         // Store the token in localStorage
         localStorage.setItem("authToken", authToken);
-  
+        localStorage.setItem("profile", JSON.stringify(profile));
         console.log("Login successful:", data);
         alert("Login successful!");
   

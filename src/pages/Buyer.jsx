@@ -1,6 +1,7 @@
 import React from 'react';
 import { CheckCircle, Globe, Users, Star } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import { Link } from 'react-router-dom';
 
 const Buyer = () => {
   return (
@@ -15,12 +16,12 @@ const Buyer = () => {
           </h1>
           <p className="text-xl mb-8">Where Industry Expertise Meets AI Innovation</p>
           <div className="space-x-4">
-            <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50">
+            {/* <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50">
               Share Your Expertise
-            </button>
-            <button className="border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600">
+            </button> */}
+            <Link to={"/"} className="border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600">
               Explore Solutions
-            </button>
+            </Link>
           </div>
         </div>
       </header>

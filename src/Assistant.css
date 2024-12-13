@@ -1,0 +1,59 @@
+/* AssistantsList.css */
+
+.assistants-container {
+    padding: 20px;
+  }
+  
+  .category-section {
+    margin-bottom: 40px;
+  }
+  
+  .category-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .assistants-row {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .assistant-card {
+    flex: 0 0 220px; /* Set card width */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    scroll-snap-align: start;
+    text-align: center;
+  }
+  
+  .assistant-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  .assistant-info {
+    padding: 10px;
+  }
+  
+  .assistant-info h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+  }
+  
+  .assistant-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .assistant-price {
+    font-weight: bold;
+    color: #000;
+  }
+  

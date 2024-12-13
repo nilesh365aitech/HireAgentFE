@@ -45,7 +45,7 @@ const ActualProduct = () => {
     const fetchAssistantDetails = async () => {
       try {
         const response = await fetch(
-          `https://gc0bj9bk-7009.inc1.devtunnels.ms/api/configs/findOneAssistant?id=${id.id}`,
+          `https://configstaging.trainright.fit/api/configs/findOneAssistant?id=${id.id}`,
           {
             method: 'GET',
             headers: {
@@ -110,7 +110,7 @@ const ActualProduct = () => {
 
     try {
       const response = await fetch(
-        "https://gc0bj9bk-7009.inc1.devtunnels.ms/api/lead/create-lead",
+        "https://configstaging.trainright.fit/api/lead/create-lead",
         {
           method: "POST",
           headers: {

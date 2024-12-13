@@ -40,7 +40,7 @@ export default function SignUp() {
     };
 
     try {
-      const response = await fetch('https://gc0bj9bk-7009.inc1.devtunnels.ms/api/users/signUp', {
+      const response = await fetch('https://configstaging.trainright.fit/api/users/signUp', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
